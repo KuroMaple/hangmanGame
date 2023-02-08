@@ -17,6 +17,10 @@ function loadClicked(){
 
 function generateInterface(word){
   console.log(word);
+  for(let i = 0; i < word.length; i++){
+    document.getElementById("dash").innerHTML += "_ "; //generating dashes
+  }
+  
 }
 
 
