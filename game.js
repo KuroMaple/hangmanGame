@@ -1,4 +1,3 @@
-
 function loadClicked(){
   $.ajax({
     method: 'GET',
@@ -6,7 +5,8 @@ function loadClicked(){
     headers: { 'X-Api-Key': 'I7q3UnuBG6F8i5PX4pH33Q==gVpnAOMk17m115Uu'},
     contentType: 'application/json',
     success: function(result) {
-      console.log(result);
+      generateInterface(result.word);
+      //parseResult(result);
       
     },
     error: function ajaxError(jqXHR) {
@@ -14,6 +14,12 @@ function loadClicked(){
     }
   });
 } 
+
+function generateInterface(word){
+  console.log(word);
+}
+
+
 
 
 
